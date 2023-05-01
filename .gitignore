@@ -1,2 +1,9 @@
 .ipynb_checkpoints/
 __pycache__/
+
+.idea/
+.DS_Store
+.ckpt
+lightning_logs/
+optuna_test/
+PSML/
