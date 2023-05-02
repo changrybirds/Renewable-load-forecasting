@@ -153,8 +153,8 @@ def plot_learning_curves(train_lc_csv_path, val_lc_csv_path, year):
     plt.ylim(0, )
     plt.title(f'Train/Val Learning Curves: {year}')
     plt.legend()
-    plt.show()
     plt.savefig(f'{lc_path}.png')
+    plt.show()
     plt.clf()
 
 
@@ -167,7 +167,7 @@ def main():
         pl_accelerator = 'cpu'
 
     # set to True if raw data has already been preprocessed
-    data_preprocessed = True
+    data_preprocessed = False
 
     if not data_preprocessed:
         loader = TimeSeriesLoader(
